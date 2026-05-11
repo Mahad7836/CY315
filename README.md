@@ -3,8 +3,7 @@
 
 > **Course:** CY315 — Wireless and Mobile Security · GIKI · Spring 2026  
 > **Track:** Track 2 — Implementation & Optimization  
-> **Baseline Paper:** Hoseini et al., IEEE Globecom Workshops 2024, DOI: 10.1109/GCWKSHPS58843.2023.10465104  
-> **Lead Author:** Muhammad Daniyal (2023406)
+> **Baseline Paper:** Hoseini et al., IEEE Globecom Workshops 2023, DOI: 10.1109/GCWKSHPS58843.2023.10465104  
 
 ---
 
