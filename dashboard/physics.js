@@ -67,10 +67,12 @@ const PHYSICS = (() => {
   // mode='normal' → connect to AP with highest raw SINR (ignores Eve)
   // mode='smart' | 'rl' → connect to AP with highest secrecy capacity
   function associateUsers(users, eveLocs, aps, powers, mode) {
+    const taken = new Set();
     return users.map(user => {
-      let bestAP  = 0;
+      let bestAP  = -1;
       let bestVal = -Infinity;
       for (let n = 0; n < aps.length; n++) {
+        if (taken.has(n)) continue;
         let val;
         if (mode === 'normal') {
           val = sinrAt(user, n, aps, powers);
@@ -81,6 +83,7 @@ const PHYSICS = (() => {
         }
         if (val > bestVal) { bestVal = val; bestAP = n; }
       }
+      taken.add(bestAP);
       return bestAP;
     });
   }
