@@ -6,9 +6,10 @@ __pycache__/
 # Trained model weights
 models/*.zip
 
-# Local-only docs (keep off GitHub)
-docs/
 .claude/
+
+# Local-only files (kept off GitHub)
+slides.tex
 
 # Submission deliverables (kept local, not pushed)
 CY315-Wireless-and-Mobile-Security.pptx
