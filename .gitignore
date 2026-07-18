@@ -9,3 +9,16 @@ models/*.zip
 # Local-only docs (keep off GitHub)
 docs/
 .claude/
+
+# Submission deliverables (kept local, not pushed)
+CY315-Wireless-and-Mobile-Security.pptx
+WAMS Submission 2023406, 2023286, 2023356.rar
+WAMS Submission 2023406, 2023286, 2023356/
+notations*
+slides content*.pdf
+
+# Raw training-history data (irrelevant to push — the plots generated
+# from this data are already tracked in results/phase2/, so the raw
+# arrays are redundant here)
+results/uasac_ent_history.npz
+results/uasac_reward_history.npy
